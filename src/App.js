@@ -1,10 +1,32 @@
 import React from 'react'
-
+import { Routes, Route } from "react-router-dom";
+import {
+  Archive,
+  Home,
+  Trash,
+  Label,
+  Logout,
+  Login,
+  Signup,
+  LandingPage,
+  Profile,
+} from "./Pages";
 const App = () => {
   return (
-    <div>
-      <h2>Welcome to NoteApp</h2>
-    </div>
+   
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/archive" element={<Archive />} />
+      <Route path="/trash" element={<Trash />} />
+      <Route path="/label" element={<Label />} />
+      <Route path="/logout" element={<Logout />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+     
+    </Routes>
+ 
   )
 }
 
