@@ -1,0 +1,12 @@
+.root{
+  background:#db2777 ; 
+}
+
+
+h3{
+   color:#db2777;
+}
+.login-link {
+    text-decoration: underline;
+    color: var(--raisin-black);
+  }
